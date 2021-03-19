@@ -1,44 +1,38 @@
-# Sample REST CRUD API with Spring Boot, Mysql, JPA and Hibernate 
+# Sample REST API with Spring Boot
 
 ## 安裝步驟
 
-**1. 複製**
+**1. Clone**
 
 ```bash
-https://github.com/givanthak/spring-boot-rest-api-tutorial.git
+https://github.com/yshnala/spring-boot-rest-api-demo-master.git
 ```
 
-**2. Create Mysql database**
+**2. Create Mysql Database**
 
 ```bash
 create database user_database
 ```
 
-**3. Change mysql username and password as per your installation**
+**3.Update mysql username and password**
 
 + open `src/main/resources/application.properties`
 
-+ change `spring.datasource.username` and `spring.datasource.password` as per your mysql installation
++ update`spring.datasource.username` and  `spring.datasource.password` 
 
 **4. Build and run the app using maven**
 
 ```bash
 mvn package
-java -jar target/spring-boot-rest-api-tutorial-0.0.1-SNAPSHOT.jar
+java -jar target/spring-boot-rest-api-demo-0.0.1-SNAPSHOT.jar
 
 ```
 
-Alternatively, you can run the app without packaging it using -
 
-```bash
-mvn spring-boot:run
-```
 
 The app will start running at <http://localhost:8080>.
 
-## Explore Rest APIs
-
-The app defines following CRUD APIs.
+## Rest APIs
 
     GET /api/v1/users
     
